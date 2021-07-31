@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages {
+        stage('maven build') {
+            steps{
+                sh "cd Spring-Penguins-TestingDone && mvn clean package"
+            }
+        }
+        stage('Run Snapshot'){
+            steps {
+                sh "cd Spring-Penguins-TestingDone/target && java -jar Spring-Penguins-0.0.1-SNAPSHOT.jar"
+            }
+        }
+    }
+}
