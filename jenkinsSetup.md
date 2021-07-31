@@ -4,5 +4,7 @@
 4) Install maven through apt install
 5) sudo apt install default-jdk 
 6) javac -version
+7) Create Jenkins file 
+8) Run Jenkins Project.. Webhook? 
 
 mvn clean
